@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
     "target" : "es2016",
-    "lib": ["ES2016"],
-    "module": "CommonJS"
-  }
+    "lib": ["ES2016"],// 默认生成的js的环境。如果使用node环境，没有Node的选项，要安装@types/node。@types是一个ts官方的类型库，其中了很多的对js代码的类型描述
+    "module": "CommonJS",//编译目标使用的模块化标准
+    "outDir": "./dist"
+  },
+  "include": ["./src"]
+//  "files": ["./src/index.ts"]
 }
